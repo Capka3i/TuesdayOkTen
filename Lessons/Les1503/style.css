@@ -18,3 +18,26 @@ body{
 div.tabl ol li{
     margin: 8px 0px 8px 0px;
 }
+.zerotop{
+   margin-top: 3px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+.imagess{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #c8ccd1 ;
+
+    box-sizing: border-box;
+    margin-right: 5px;
+
+}
+.texts{
+    width: 150px;
+    height: 150px;
+
+    padding: 3px;
+    margin-right: 5px;
+    box-sizing: border-box;
+
+}
