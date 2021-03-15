@@ -1,0 +1,20 @@
+.sh1{
+    margin: 1px;
+}
+hr{
+    margin: 1px;
+}
+
+body{
+    margin-left: 20px;
+}
+.tabl{
+    height: 530px;
+    width: 220px;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+
+}
+div.tabl ol li{
+    margin: 8px 0px 8px 0px;
+}
