@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Flex</title>
+        <style>
+            .red {
+                width: 1250px;
+                height: 100px;
+                background: red;
+            }
+
+            .brown {
+                width: 1000px;
+                height: 400px;
+                background: brown;
+            }
+
+            .silver {
+                width: 250px;
+                height: 400px;
+                background: silver;
+            }
+
+            .flexStart {
+                display: flex;
+                justify-items: flex-start;
+            }
+
+            .standart {
+                width: 1250px;
+                height: 500px;
+            }
+
+
+            .father {
+                width: 100%;
+                height: 350px;
+            }
+
+            .son {
+                width: 70%;
+                height: 100%;
+
+            }
+
+            .daughter {
+                width: 30%;
+                height: 100%;
+                background: pink;
+            }
+
+            .wife {
+                width: 100%;
+                height: 50%;
+                background: coral;
+            }
+
+            .ex-wife {
+                width: 33.3%;
+                height: 100%;
+
+            }
+
+            .children {
+                width: 100%;
+                height: 100%;
+            }
+
+            .flexSpace {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .child {
+                width: 33.3%;
+                height: 49.5%;
+                background: #002aff;
+            }
+
+            .lonChild {
+                width: 100%;
+                height: 49.5%;
+                background: #ff0066;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class = "standart">
+            <div class = "red"></div>
+            <div class = "flexStart">
+                <div class = "brown"></div>
+                <div class = "silver"></div>
+
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class = "standart">
+            <div class = "red"></div>
+            <div class = "flexStart father">
+                <div class = "son">
+                    <div class = "wife"></div>
+                    <div class = "children flexSpace">
+                        <div class = "child"></div>
+                        <div class = "child"></div>
+                        <div class = "child"></div>
+                    </div>
+                </div>
+                <div class = "daughter"></div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div class = "standart">
+            <div class = "red"></div>
+            <div class = "father flexStart">
+                <div class = "son flexSpace">
+
+                    <div class = "ex-wife">
+                        <div class = "lonChild" style = "margin: 1% 0%"></div>
+                        <div class = "lonChild" style = "margin: 1% 0%"></div>
+                    </div>
+                    <div class = "ex-wife">
+                        <div class = "lonChild" style = "margin: 1% 0%"></div>
+                        <div class = "lonChild" style = "margin: 1% 0%"></div>
+                    </div>
+                    <div class = "ex-wife">
+                        <div class = "lonChild" style = "margin: 1% 0%"></div>
+                        <div class = "lonChild" style = "margin: 1% 0%"></div>
+                    </div>
+
+                </div>
+                <div class = "daughter"></div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
