@@ -1,0 +1,98 @@
+body *{
+    box-sizing: border-box;
+}
+.full {
+    width: 500px;
+    height: 600px;
+    border: 2px solid black;
+
+}
+
+.blockA {
+    width: 99%;
+    height: 19.5%;
+    margin: 0.5%;
+    border: 2px solid orange;
+
+}
+
+
+.blockB {
+    width: 99%;
+    height: 9.5%;
+    margin: 0.5%;
+    border: 2px solid red;
+
+}
+
+
+.blockC {
+    width: 99%;
+    height: 59.5%;
+    margin: 0.5%;
+    border: 2px solid rebeccapurple;
+    display: flex;
+    justify-items: flex-start;
+
+}
+
+.blockD {
+    width: 99%;
+    height: 9.5%;
+    margin: 0.5%;
+    border: 2px solid tomato;
+}
+
+.blockC1 {
+    width: 69%;
+    height: 98%;
+    margin: 0.5%;
+    border: 2px solid darkblue;
+
+}
+
+.blockC2 {
+    width: 29%;
+    height: 98%;
+    margin: 0.5%;
+    border: 2px solid darkkhaki;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blockC11 {
+    width: 99%;
+    height: 9%;
+    margin: 0.5%;
+    margin-top: 3%;
+    border: 2px solid purple;
+}
+
+.blockC12 {
+    width: 99%;
+    height: 87%;
+    margin: 0.5%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blockC121 {
+    width: 99%;
+    height: 9%;
+    margin: 0.5%;
+    border: 2px solid pink;
+}
+
+.blockC122 {
+    width: 99%;
+    height: 4%;
+    margin: 0.5%;
+    border: 2px solid orange;
+}
+
+.blockC21 {
+    width: 98%;
+    height: 45%;
+    margin: 1%;
+    border: 2px solid yellow;
+}
