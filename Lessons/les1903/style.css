@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_block {
+    display: flex;
+    width: 100%;
+    max-width: 1900px;
+    height: 70px;
+    border-bottom: 1px solid #49B3FB;
+    padding: 0 30px;
+}
+
+.nav_logo img {
+    padding: 5px;
+    max-height: 100%;
+    width: 70px;
+    box-sizing: border-box;
+}
+
+.nav_text {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    column-gap: 30px;
+    flex-grow: 1;
+
+
+}
+
+.nav_text a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+
+
+
+.nav_call_me {
+    background-color: #f8f9fa;
+}
+
+.nav_call_me button {
+    height: 69px;
+    display: flex;
+    align-items: center;
+    border-bottom: #f8f9fa;
+    border: 0;
+    background-color: #ffffff;
+    font-size: 16px;
+
+}
+
+.nav_call_me p {
+    margin: 30px;
+    font-weight: bold;
+    color: black;
+
+}
+
+
+.screen_block {
+    display: flex;
+
+}
+
+.screen_block_left {
+    margin: 65px 0 20px 145px;
+    width: 50%;
+}
+
+.screen_block_right {
+    margin: 70px;
+    position: relative;
+}
+
+
+.screen_block_right img{
+    width: 95%;
+    height: 95%;
+
+}
+span{
+color: dodgerblue;
+}
+.screen_block_left h4 {
+    margin-top: 75px;
+    font-weight: 700;
+    color: black;
+    width: 80%;
+    font-size: 15px;
+    column-gap: 40px;
+}
+h1 {
+    font-weight: 1000;
+    color: black;
+}
+
+.button_play_a, .button_play_b, .button_play_c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_play_a {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #89E24E;
+    border-radius: 50%;
+}
+
+.button_play_b {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #89E24E;
+    border-radius: 50%;
+
+}
+
+.button_play_c {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #89E24E;
+    background-color: #89E24E;
+    border-radius: 50%;
+
+}
+
+.button_play {
+    position: absolute;
+    left: -88px;
+    bottom: -44px;
+
+}
+
+.button_play_c {
+    color: #ffffff;
+}
+
+.button_play_c::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #00ff12;
+    opacity: 0;
+    animation: buble 2s infinite;
+}
+
+
+
+@keyframes buble {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 0.3;
+        transform: scale(1.2);
+    }
+
+}
