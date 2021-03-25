@@ -168,3 +168,25 @@ console.log(10 !== 10);
 console.log(123 === '123');
 console.log(123 == '123');
 
+//Додаткове
+
+console.log(132 > 100 && 45 < 12 ); //-> false
+console.log(34 > 33 && 23 < 90 );//-> true
+console.log(99 > 100 && 45 > 12 );//-> false
+console.log(132 > 100 || 45 < 12 );//-> true
+console.log(111 > 11 || 45 < 111 );//->  true
+console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) );//-> true
+console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) );//-> true
+console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) );//-> false
+console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 ));//-> true
+console.log(!!'-1'); //-> true
+console.log(!!-1); //-> true
+console.log(!!'0'); //-> true
+console.log(!!'null'); //-> true
+console.log(!!'undefined'); //-> true
+console.log(!!(3/'owu')); //-> false
+console.log((111 > 11 || 45 < 111) ||  !!'0'); //-> true
+console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); //-> false
+
+
+//
