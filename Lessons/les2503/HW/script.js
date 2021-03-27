@@ -295,7 +295,7 @@
 //2.15
 // Аналог 2,14 просто  з циклом if
 // for (let i = 0; i < 100; i++) {
-// if (i%2==0){
+// if (i%2===0){
 //     console.log(`${i}`);
 //     document.write(`${i}<br>`)
 // }
@@ -325,7 +325,7 @@
 //     for (let second = 0; second < 60; second++) {
 //         seconds = second < 10 ? `0` + second : second;
 //         time = `${minutes}:${seconds}`;
-//         if (minutes ==='05'&& seconds=='20'){
+//         if (minutes ==='05'&& seconds==='20'){
 //             minute=60;
 //             second=60;
 //         }
