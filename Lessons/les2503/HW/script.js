@@ -317,7 +317,7 @@
 
 //2.18
 // В цьому вирзі дублювання коду, але якщо вказати інше значення time_select в діапазоні 00:00 до 59:59 код буде робочий;
-// let time_select = '02:00';
+// let time_select = '05:20';
 // let time;
 // let seconds;
 // for (let minute = 0; minute < 60; minute++) {
@@ -325,42 +325,38 @@
 //     for (let second = 0; second < 60; second++) {
 //         seconds = second < 10 ? `0` + second : second;
 //         time = `${minutes}:${seconds}`;
-//         if (time_select == time) { // знаю що тут дублювання коду.
-//             break;
+//         if (minutes ==='05'&& seconds=='20'){
+//             minute=60;
+//             second=60;
 //         }
 //     }
-//     time = `${minutes}:${seconds}`; // знаю що тут дублювання коду.
-//     if (time_select == time) {
-//         break;
-//     }
-//
 // }
 // console.log(time);
 
+
+
 //2.19
 //
-// let setTime = '02:20:00'
-// let time;
-// let hours;
-// let minutes;
-// let seconds;
-// for (let hour = 0; hour < 24; hour++) {
-//     hours = hour < 10 ? '0' + hour : hour;
-//     for (let minute = 0; minute < 60; minute++) {
-//         minutes = minute < 10 ? '0' + minute : minute;
-//         for (let second = 0; second < 60; second++) {
-//             seconds = second < 10 ? '0' + second : second;
-//             time = `${hours}:${minutes}:${seconds}`;
-//             if (time === setTime) {
-//                 break;
-//             }
-//         }
-//         if (time === setTime) {
-//             break;
-//         }
-//     }
-//     if (time === setTime) {
-//         break;
-//     }
-// }
-// console.log(time);
+let setTime = '02:20:00'
+let time;
+let hours;
+let minutes;
+let seconds;
+for (let hour = 0; hour < 24; hour++) {
+    hours = hour < 10 ? '0' + hour : hour;
+    for (let minute = 0; minute < 60; minute++) {
+        minutes = minute < 10 ? '0' + minute : minute;
+        for (let second = 0; second < 60; second++) {
+            seconds = second < 10 ? '0' + second : second;
+            time = `${hours}:${minutes}:${seconds}`;
+            if (hours==='02'&&minutes==='20'&&seconds==='00') {
+
+            }
+        }
+
+        }
+    }
+
+
+
+console.log(time);
