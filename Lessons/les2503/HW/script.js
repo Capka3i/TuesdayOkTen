@@ -182,4 +182,185 @@
 //     }
 //
 // }
+// for (let i = 0; i < arr2_8.length; i++) { //
+//     if (typeof (arr2_8[i]) === "boolean"){
+//         console.log(`Index ${i}: boolean`)
+//     }
+//
+// }
 
+//2.9
+//
+// let arr2_9 = ['room',
+//     '82',
+//     56,
+//     true,
+//     'boolean',
+//     45,
+//     false,
+//     'pig',
+//     1,
+//     'nice',
+//     '0'
+// ]
+// for (let i = 0; i < arr2_9.length; i++) {   //for (const arr29Element of arr2_9) {
+//     if (typeof (arr2_9[i]) === `number`) {   //if (typeof (arr29Element) === `number`) {
+//         console.log(`Index ${i}: number`)    // console.log(`Index ${arr29Element}: number`)}}
+//     }
+//
+// }
+
+//2.10
+//
+// let arr2_10 = ['room',
+//     '82',
+//     56,
+//     true,
+//     'boolean',
+//     45,
+//     false,
+//     'pig',
+//     1,
+//     'nice',
+//     '0'
+// ]
+//
+// for (const arr210Element of arr2_10) {
+//     if (typeof (arr210Element) === `string`){
+//         console.log(`Index ${arr210Element}: string`);
+//     }
+//
+// }
+
+//2.11
+//
+//
+// let arr2_11 = [];
+//
+// arr2_11.push('habitual')
+// arr2_11.push(false)
+// arr2_11.push(44)
+// arr2_11.unshift('hushed')
+// arr2_11.push(false)
+// arr2_11.push('idiotic')
+// arr2_11.push(83)
+// arr2_11.unshift('3')
+// arr2_11.push(true)
+// arr2_11.push(52)
+// for (let i = 0; i < arr2_11.length; i++) {      // for (const arr211Element of arr2_11) {
+//     console.log(arr2_11[i]);                //     console.log(arr211Element);
+// }                                         // }
+
+//2.12
+//
+// for (let i = 0; i < 10; i++) {
+//     console.log(i)
+//     document.write(`${i}<br>`)
+// }
+// document.write(`<hr>`)
+// //заради забави зробив в другу сторону
+// for (let i = 10; i > 0; i--) {
+//     console.log(i-1)
+//     document.write(`${i-1}<br>`)
+// }
+
+//2.13
+//
+// for (let i = 0; i < 100; i++) { // let i=1 ; i <= 100 якщо потрібно зробити від 1 до 100
+//     console.log(i)
+//     document.write(`${i}<br>`)
+// }
+// document.write(`<hr>`)
+// //заради забави зробив в другу сторону
+// for (let i = 100; i > 0; i--) { // let i=101 ; i > 0 якщо потрібно зробити від 100 до 1
+//     console.log(i-1)
+//     document.write(`${i-1}<br>`)
+// }
+
+//2.14
+//
+// for (let i = 0; i < 100; i += 2) {
+//     console.log(`${i}`);//console.log(i) те саме
+//     document.write(`${i}<br>`)
+//
+// }
+// Ітерація в від більшого до меншого
+//
+// for (let i = 100; i > 0; i -= 2) {
+//     console.log(`${i}`);//console.log(i) те саме
+//     document.write(`${i}<br>`)
+//
+// }
+
+//2.15
+// Аналог 2,14 просто  з циклом if
+// for (let i = 0; i < 100; i++) {
+// if (i%2==0){
+//     console.log(`${i}`);
+//     document.write(`${i}<br>`)
+// }
+// }
+
+//2.16
+//Копія 2.15
+
+//2.17
+//
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(`${i}`)
+//         document.write(`${i}<br>`)
+//
+//     }
+//
+// }
+
+//2.18
+// В цьому вирзі дублювання коду, але якщо вказати інше значення time_select в діапазоні 00:00 до 59:59 код буде робочий;
+// let time_select = '02:00';
+// let time;
+// let seconds;
+// for (let minute = 0; minute < 60; minute++) {
+//     minutes = minute < 10 ? '0' + minute : minute;
+//     for (let second = 0; second < 60; second++) {
+//         seconds = second < 10 ? `0` + second : second;
+//         time = `${minutes}:${seconds}`;
+//         if (time_select == time) { // знаю що тут дублювання коду.
+//             break;
+//         }
+//     }
+//     time = `${minutes}:${seconds}`; // знаю що тут дублювання коду.
+//     if (time_select == time) {
+//         break;
+//     }
+//
+// }
+// console.log(time);
+
+//2.19
+//
+// let setTime = '02:20:00'
+// let time;
+// let hours;
+// let minutes;
+// let seconds;
+// for (let hour = 0; hour < 24; hour++) {
+//     hours = hour < 10 ? '0' + hour : hour;
+//     for (let minute = 0; minute < 60; minute++) {
+//         minutes = minute < 10 ? '0' + minute : minute;
+//         for (let second = 0; second < 60; second++) {
+//             seconds = second < 10 ? '0' + second : second;
+//             time = `${hours}:${minutes}:${seconds}`;
+//             if (time === setTime) {
+//                 break;
+//             }
+//         }
+//         if (time === setTime) {
+//             break;
+//         }
+//     }
+//     if (time === setTime) {
+//         break;
+//     }
+// }
+// console.log(time);
