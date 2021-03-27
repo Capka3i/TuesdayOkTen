@@ -92,7 +92,7 @@
 //
 // let arr11 = [43, 34, 39, 60, 12, 31, 86, 42, 90, 92];
 // for (let i = 0; i < arr11.length; i++) {
-//     if (arr11[i] % 2 == 0) {
+//     if (arr11[i] % 2 === 0) {
 //         console.log(arr11[i]);
 //     }
 //
@@ -155,14 +155,14 @@
 //14.5
 // let i=0
 // while(i<arr14.length){
-//     if (i%2== 0)
+//     if (i%2=== 0)
 //         console.log(arr14[i]);
 //     i++;
 // }
 
 //14.6
 // for (let i = 0; i < arr14.length; i++) {
-//     if (i%2==0){
+//     if (i%2===0){
 //         console.log(arr14[i]);
 //     }
 //
@@ -170,7 +170,7 @@
 
 //14.7
 // for (let i = 0; i < arr14.length; i++) {
-//     if (i%3==0){
+//     if (i%3===0){
 //         arr14[i] = 'okten';
 //     }
 // }
@@ -213,21 +213,21 @@
 //14./5
 // let i = arr14.length - 1;
 // while (i >= 0) {
-//     if (i % 2 == 0)
+//     if (i % 2 === 0)
 //         console.log(arr14[i]);
 //     i--;
 // }
 
 //14./6
 // for (let i = arr14.length-1; i >=0 ; i--) {
-//     if (i%2==0)
+//     if (i%2===0)
 //         console.log(arr14[i]);
 //
 // }
 
 //14./7
 // for (let i = arr14.length; i >= 0 ; i--) {
-//     if (i%3==0){
+//     if (i%3===0){
 //         arr14[i] = 'okten';
 //     }
 // }
@@ -237,7 +237,7 @@
 // let even = [];
 // let notEven = [];
 // for (let i = 0; i < 100; i++) {
-//     if (i%2==0){
+//     if (i%2===0){
 //         even.push(i);
 //     } else {
 //         notEven.push(i)
@@ -272,7 +272,7 @@
 // let arr_2 = [];
 // let arr_1 = [];
 // for (let i = 0; i < arr14_11.length; i++) {
-//     if (arr14_11[i]%2==0){
+//     if (arr14_11[i]%2===0){
 //         arr_2.push(arr14_11[i]);
 //     } else {
 //         arr_1.push(arr14_11[i]);
