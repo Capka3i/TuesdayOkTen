@@ -328,6 +328,7 @@
 //         if (minutes ==='05'&& seconds==='20'){
 //             minute=60;
 //             second=60;
+//             break;
 //         }
 //     }
 // }
@@ -350,7 +351,9 @@ for (let hour = 0; hour < 24; hour++) {
             seconds = second < 10 ? '0' + second : second;
             time = `${hours}:${minutes}:${seconds}`;
             if (hours==='02'&&minutes==='20'&&seconds==='00') {
-
+                hour=24;
+                minute=60;
+                break;
             }
         }
 
