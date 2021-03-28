@@ -338,7 +338,7 @@
 
 //2.19
 //
-let setTime = '02:20:00'
+
 let time;
 let hours;
 let minutes;
@@ -347,16 +347,17 @@ for (let hour = 0; hour < 24; hour++) {
     hours = hour < 10 ? '0' + hour : hour;
     for (let minute = 0; minute < 60; minute++) {
         minutes = minute < 10 ? '0' + minute : minute;
+
         for (let second = 0; second < 60; second++) {
             seconds = second < 10 ? '0' + second : second;
             time = `${hours}:${minutes}:${seconds}`;
-            if (hours==='02'&&minutes==='20'&&seconds==='00') {
+            if (hours==='23'&&minutes==='59'&&seconds==='59') {
                 hour=24;
                 minute=60;
                 break;
             }
         }
-
+        console.log(time);
         }
     }
 
