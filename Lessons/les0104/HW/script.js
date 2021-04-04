@@ -333,48 +333,48 @@
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // 	Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
 //
-let cars = [
-	{
-		model: 'Audi:A3',
-		class: 'C',
-		year: 2005
-	},
-	{
-		model: 'Saturn:Vue',
-		class: 'Compact SUV',
-		year: 2001
-	},
-	{
-		model: 'Mini:Countryman',
-		class: 'Crossover',
-		year: 2010,
-	},
-	{
-		model: 'Dodge:Ram',
-		class: 'Picap',
-		year: 1981
-	},
-	{
-		model: 'BMW:X6',
-		class: 'Crossover',
-		year: 2008
-	}
-
-];
-let element = 'div';
-
-function showCars(cars, el) {
-	for (const car of cars) {
-
-		let element1 = document.createElement(el);
-		console.log(car);
-		element1.innerHTML = `<div>model: ${car.model}<br> class:${car.class}<br> year:${car.year}</div><hr>`
-		document.body.appendChild(element1);
-
-	}
-}
-
-showCars(cars, element);
+// let cars = [
+// 	{
+// 		model: 'Audi:A3',
+// 		class: 'C',
+// 		year: 2005
+// 	},
+// 	{
+// 		model: 'Saturn:Vue',
+// 		class: 'Compact SUV',
+// 		year: 2001
+// 	},
+// 	{
+// 		model: 'Mini:Countryman',
+// 		class: 'Crossover',
+// 		year: 2010,
+// 	},
+// 	{
+// 		model: 'Dodge:Ram',
+// 		class: 'Picap',
+// 		year: 1981
+// 	},
+// 	{
+// 		model: 'BMW:X6',
+// 		class: 'Crossover',
+// 		year: 2008
+// 	}
+//
+// ];
+// let element = 'div';
+//
+// function showCars(cars, el) {
+// 	for (const car of cars) {
+//
+// 		let element1 = document.createElement(el);
+// 		console.log(car);
+// 		element1.innerHTML = `<div>model: ${car.model}<br> class:${car.class}<br> year:${car.year}</div><hr>`
+// 		document.body.appendChild(element1);
+//
+// 	}
+// }
+//
+// showCars(cars, element);
 
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // 	Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
