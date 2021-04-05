@@ -1,13 +1,7 @@
 // 1) створити функцію яка приймає масив та виводить його
 // //
-// let arrayList = [];
-// let bool = true;
-// while (bool) {
-// 	bool = prompt('Enter numb.If you want stop clean string and press Enter');
-// 	while (bool) {
-// 		arrayList.push(bool);
-// 		break;
-// 	}
+// let arrayList = [1,2,3,5,8,6,4,9,2,10];
+
 // }
 // function arrayShow() {
 // 	for (const argument of arguments) {
