@@ -124,5 +124,24 @@
 //Палиндром
 // Дано слово, состоящее только из строчных латинских букв. Проверьте, является ли это слово палиндромом. Выведите YES или NO.
 // При решении этой задачи нельзя пользоваться циклами, в решениях на питоне нельзя использовать срезы с шагом, отличным от 1.
+//
+// let palin = 'lopool';
+// let len = palin.length-1;
+// let i = 0;
+//
+// function palindrom(palin, len) {
+//
+// 	if (palin[i] == palin[len - i] && i <= Math.floor(palin.length / 2)) {
+//
+// 	} else if(i < Math.floor(palin.length / 2)){
+// 		return 'NO';
+// 	}
+//
+// 	return 'YES';
+// }
+//
+// console.log(palindrom(palin, len));
 
 
+let array = [{lofd: 25,dfdsfsd:52,f:52,sdf:35,},{lofd: 25,dfdsfsd:52,f:52,sdf:35,}]
+console.log(array.entries);

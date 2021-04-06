@@ -159,7 +159,7 @@
 // 	let mas = [];
 // 	for (const argument of arguments) {
 // 		for (const argumentElement of argument) {
-// 			for (const argumentElementElement of argumentElement) {
+// 			for (const argumentElementElement in argumentElement) {
 // 				mas.push(argumentElementElement);
 // 				console.log(`${argumentElementElement}`);
 // 			}
