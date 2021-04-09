@@ -40,7 +40,7 @@
 // // При включенні ультрабуку має видаватися помилка, якшо вага більша за 2кг та батарея тримаж менше ніж 4 години.
 //
 // class Ultrabook extends Laptop {
-// 	constructor(rAM, processor, name, on, inch, power) {
+// 	constructor(rAM, processor, name, on, inch, power,weight) {
 // 		super(rAM, processor, name, on, inch, power);
 // 		this.weight = 1.745;
 //
@@ -56,7 +56,7 @@
 //
 //
 // class GeneralPC extends Computer {
-// 	constructor(rAM, processor, name, on, inch) {
+// 	constructor(rAM, processor, name, on, inch, FPS) {
 // 		super(rAM, processor, name, on, inch);
 // 		this.FPS = this.processor * this.rAM;
 // 	}
