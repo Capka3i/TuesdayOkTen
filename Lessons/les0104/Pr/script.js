@@ -61,8 +61,8 @@
 //
 // let str1 = prompt();
 // let str2 = prompt();
-// // let str1 = 'Hellleo';
-// // let str2 = 'lelloeH';
+//// let str1 = 'ANAGRAM';
+//// let str2 = 'MGANRAA';
 // let word = 0;
 // function writers(str1, str2) {
 // 	for (let i = 0; i < str1.length; i++) {
@@ -125,23 +125,48 @@
 // Дано слово, состоящее только из строчных латинских букв. Проверьте, является ли это слово палиндромом. Выведите YES или NO.
 // При решении этой задачи нельзя пользоваться циклами, в решениях на питоне нельзя использовать срезы с шагом, отличным от 1.
 //
-// let palin = 'lopool';
-// let len = palin.length-1;
-// let i = 0;
-//
-// function palindrom(palin, len) {
-//
-// 	if (palin[i] == palin[len - i] && i <= Math.floor(palin.length / 2)) {
-//
-// 	} else if(i < Math.floor(palin.length / 2)){
-// 		return 'NO';
+// let palin = 'lopoppopol';
+// function palindrom(palin) {
+// 	let goll = 0;
+// 	let poll = Math.floor(palin.length / 2);
+// 	for (let j = 0; j < poll; j++) {
+// 			if (palin[j] === palin[palin.length-1-j])
+// 				goll++;
 // 	}
-//
-// 	return 'YES';
+// 	if (goll === poll) {
+// 		return 'YES';
+// 	}
+// 	return 'NO';
 // }
+// console.log(palindrom(palin));
+
+//Количество единиц
+// Дана последовательность натуральных чисел  в строке, завершающаяся двумя числами 0 подряд.
+// Определите, сколько раз в этой последовательности встречается число 1. Числа, идущие после двух нулей, необходимо игнорировать.
 //
-// console.log(palindrom(palin, len));
+// let value = 2176491947586100;
+// let numb = 1;
+//
+// function doki(val, num) {
+// 	let val1 = String(val);
+// 	let s = 0;
+// 	let comm = val1.split('00');
+// 	let acc = comm[0];
+// 	for (let i = 0; i < acc.length; i++) {
+// 		// console.log(acc[i]);
+// 		if (+acc[i] === num) {
+// 			s++;
+// 		}
+// 	}
+// 	return `${val} -> ${s}`;
+// }
+// console.log(doki(value, numb));
 
+//Вирівняти багаторівневий масив в однорівневий
+// [1,3, ['Hello, 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello, 'Wordd', 9, 6, 1, 'oops', 9]
+// flat використовувати заборонено.
 
-let array = [{lofd: 25,dfdsfsd:52,f:52,sdf:35,},{lofd: 25,dfdsfsd:52,f:52,sdf:35,}]
-console.log(array.entries);
+let arr = [1,3, ['Hello', 'Wordd', [9,6,1]], ['oops'], 9];
+arr.reduce((previousValue, currentValue) => {
+	console.log(currentValue);
+},0)
