@@ -498,3 +498,28 @@ const usersWithAddress = [
 // 	return acc;
 // },0)
 // console.log(summ1);
+
+
+//Задача: дан отсортированный по возрастанию массив целых чисел.
+// Необходимо вернуть наименьший и наибольший индекс заданного элемента.
+// Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
+// Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
+
+let array = [1, 5, 3, 2, 5, 6, 2, 8, 9, 2];
+let number = 7;
+function answer(arr,num){
+
+	let accam =arr.reduce((acc,valeu,index)=>{
+		if (valeu===num){
+			acc.push(index);
+		}
+		return acc;
+
+	},[])
+	console.log(accam);
+	let min = accam[0];
+	let max= accam[accam.length-1];
+	return `Key = ${num}\n Answer: MinIndex = ${min}, MaxIndex = ${max}.`
+}
+
+console.log(answer(array,number));
