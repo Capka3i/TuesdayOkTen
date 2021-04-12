@@ -434,52 +434,65 @@ const usersWithAddress = [
 // // 	Власник автомобіля теж має бути обєкт, у якого є поля
 // // Імя, вік, стаж водіння.
 // // 	Створити не менше 7 та не більше 20 машинок.
-// let obj1 = {model: 'mitsubishi lancer', power: 265, owner: {name: 'Nik', age: 25, experience: 2}, price: 24500, year: 2005};
-// let obj2 = {model: 'tesla', power: 300, owner: {name: 'Kaylynn', age: 26, experience: 1}, price: 14208, year: 2020};
-// let obj3 = {model: 'chrysler', power: 285, owner: {name: 'Caylee', age: 37, experience: 0.5}, price: 21995, year: 2006};
-// let obj4 = {model: 'Campagna', power: 165, owner: {name: 'Katherine', age: 32, experience: 5}, price: 4319, year: 2019};
-// let obj5 = {model: 'Ford', power: 200, owner: {name: 'Myah', age: 44, experience: 10}, price: 8470, year: 2011};
-// let obj6 = {model: 'Invicta', power: 205, owner: {name: 'Harper', age: 27, experience: 2}, price: 13541, year: 2019};
-// let obj7 = {model: 'Holden', power: 280, owner: {name: 'Rebecca', age: 30, experience: 1.5}, price: 8764, year: 2014};
+let obj1 = {model: 'mitsubishi lancer', power: 265, owner: {name: 'Nik', age: 25, experience: 2}, price: 24500, year: 2005};
+let obj2 = {model: 'tesla', power: 300, owner: {name: 'Kaylynn', age: 26, experience: 1}, price: 14208, year: 2020};
+let obj3 = {model: 'chrysler', power: 285, owner: {name: 'Caylee', age: 37, experience: 0.5}, price: 21995, year: 2006};
+let obj4 = {model: 'Campagna', power: 165, owner: {name: 'Katherine', age: 32, experience: 5}, price: 4319, year: 2019};
+let obj5 = {model: 'Ford', power: 200, owner: {name: 'Myah', age: 44, experience: 10}, price: 8470, year: 2011};
+let obj6 = {model: 'Invicta', power: 205, owner: {name: 'Harper', age: 27, experience: 2}, price: 13541, year: 2019};
+let obj7 = {model: 'Holden', power: 280, owner: {name: 'Rebecca', age: 30, experience: 1.5}, price: 8764, year: 2014};
 //
 //
+
+// //Для початку вкладіть всі наші створені автомобілі в масив cars.
+let allCars = [obj1, obj2, obj3, obj4, obj5, obj6, obj7];
+
 // // Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
 //
-// function upgrade(car) {
-// 	car.power = Math.floor(car.power * 1.1);
-// 	return car;
-// }
-//
-// obj4 = upgrade(obj4);
-// obj5 = upgrade(obj5);
-// obj2 = upgrade(obj2);
-// obj1 = upgrade(obj1);
-//
-// function owners(obj, name, age, exp) {
-// 	obj.owner.name = name;
-// 	obj.owner.age = age;
-// 	obj.owner.experience = exp;
-// 	return obj;
-//
-// }
+
+
+let upgrade = allCars.map((value, index) => {
+	if (!(index % 2))
+		value.power = Math.floor(value.power * 1.1);
+	return value;
+});
+console.log(upgrade);
+
+
 // //На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
-// obj4 = owners(obj4, 'vova', 25, 2);
-// obj5 = owners(obj5, 'lusi', 45, 10);
-// obj2 = owners(obj2, 'kosta', 55, 20);
-// obj1 = owners(obj1, 'jo', 19, 1);
-// //Для початку вкладіть всі наші створені автомобілі в масив cars.
-// let allCars = [obj1,obj2,obj3,obj4,obj5,obj6,obj7];
+
+
+
+function newOwners(obj, owners) {
+	let j = 0
+	for (let i = 0; i < obj.length; i++) {
+		obj[i].owner = owners[j];
+		j++
+
+	}
+	return obj;
+}
+let owners = [
+	{name: 'vova', age: 25, experience: 2},
+	{name: 'lusi', age: 45, experience: 10},
+	{name: 'kosta', age: 55, experience: 20},
+	{name: 'jo', age: 19, experience: 1}];
+
+console.log(newOwners(allCars, owners));
+
+
 // // Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
-// function upgrade(obj){
-// 	obj.power=Math.floor(obj.power*1.1);
-// 	obj.price=Math.floor(obj.price *1.05);
-// 	return obj;
-// }
+// let newCars = allCars.map((value, index) => {
+// if(!(index%2)){
+// 	value.power*=1.1;
+// 	value.price*=1.1
 //
-// for (let i = 0; i < allCars.length; i+=2) {
-// 	upgrade(allCars[i])
 // }
-// // console.log(allCars);
+// 	return value;
+// })
+// console.log(newCars);
+
+
 // //Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25,
 // // то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
 // allCars = allCars.reduce((acc,value)=>{
@@ -492,6 +505,8 @@ const usersWithAddress = [
 // 	return acc;
 // },[])
 // // console.log(allCars);
+
+
 // // Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
 // let summ1 =allCars.reduce((acc,value)=> {
 // 	acc+=value.price;
@@ -505,21 +520,21 @@ const usersWithAddress = [
 // Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
 // Вывод: наибольший и наименьший индекс в массиве заданного элемента. Если такого элемента нет в массиве, выведите -1.
 
-let array = [1, 5, 3, 2, 5, 6, 2, 8, 9, 2];
-let number = 7;
-function answer(arr,num){
-
-	let accam =arr.reduce((acc,valeu,index)=>{
-		if (valeu===num){
-			acc.push(index);
-		}
-		return acc;
-
-	},[])
-	console.log(accam);
-	let min = accam[0];
-	let max= accam[accam.length-1];
-	return `Key = ${num}\n Answer: MinIndex = ${min}, MaxIndex = ${max}.`
-}
-
-console.log(answer(array,number));
+// let array = [1, 5, 3, 2, 5, 6, 2, 8, 9, 2];
+// let number = 7;
+// function answer(arr,num){
+//
+// 	let accam =arr.reduce((acc,valeu,index)=>{
+// 		if (valeu===num){
+// 			acc.push(index);
+// 		}
+// 		return acc;
+//
+// 	},[])
+// 	console.log(accam);
+// 	let min = accam[0];
+// 	let max= accam[accam.length-1];
+// 	return `Key = ${num}\n Answer: MinIndex = ${min}, MaxIndex = ${max}.`
+// }
+//
+// console.log(answer(array,number));
