@@ -733,7 +733,6 @@ checkMarried.onchange = () => {
 		peshka.innerHTML = `id: ${argument.id}, name: ${argument.name}, age: ${argument.age}, isMarried:
 		 ${argument.isMarried}, address: {city: ${argument.address.city}, street: ${argument.address.street}, number: ${argument.address.number}} `;
 	}
-	divka.appendChild('---------------------------------------------------------------------------------------------------')
 };
 checkAge.onchange = () => {
 	if (!array.length) {
@@ -747,7 +746,6 @@ checkAge.onchange = () => {
 		peshka.innerHTML = `id: ${argument.id}, name: ${argument.name}, age: ${argument.age}, isMarried:
 		 ${argument.isMarried}, address: {city: ${argument.address.city}, street: ${argument.address.street}, number: ${argument.address.number}} `;
 	}
-	divka.innerText('---------------------------------------------------------------------------------------------------')
 	// console.log(array);
 };
 checkCity.onchange = () => {
@@ -763,7 +761,6 @@ checkCity.onchange = () => {
 		 ${argument.isMarried}, address: {city: ${argument.address.city}, street: ${argument.address.street}, number: ${argument.address.number}} `;
 
 	}
-	divka.innerText('---------------------------------------------------------------------------------------------------')
 	// console.log(array);
 };
 laberMarried.innerHTML = 'false';
