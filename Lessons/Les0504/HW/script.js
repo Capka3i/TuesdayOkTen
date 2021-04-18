@@ -24,7 +24,7 @@
 // // У нього зявляється нова змінна роботи батареї. Ця змінна визначається як потужність / (дюйми * оперативку)
 //
 // class Laptop extends Computer {
-// 	constructor(rAm, processor, name, on) {
+// 	constructor(rAm, processor, name, on, inch) {
 // 		super(rAm, processor, name, on);
 // 		this.inch = 15.6;
 // 	}
