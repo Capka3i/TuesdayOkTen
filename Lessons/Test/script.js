@@ -85,5 +85,6 @@ while (arr.length < 6) {
 
 
 }
+console.log(`Знайшло з ${x} разу.`);
 console.log(summ);
 console.log(arr);
