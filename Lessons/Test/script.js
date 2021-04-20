@@ -1,65 +1,89 @@
-// // let time = new Date();
-// // let hour;
-// // let minute;
-// // function timer() {
-// // 	while (!(hour === 0) && !(minute===0)) {
-// // 		hour = 20 - time.getHours();
-// // 		minute = 60 - time.getMinutes();
-// // 		console.log(hour);
-// // 		setTimeout(minute,10000)
-// // 	}
-// // }
-// //
-// // timer(hour, minute);
-//
-// console.time()
-// let n1 = '    Harry       Potter      ';
-// let n2 = '    Ron       Whisley      ';
-// let n3 = '    Hermione       Granger      ';
-//
-// const normalize = (str) => {
-// 	return str
-// 		.split(' ')
-// 	   .filter(x => x.length)
-// 	   .join(' ')
-// };
-//
-// console.log(normalize(n1));
-// console.log(normalize(n2));
-// console.log(normalize(n3));
-// console.timeEnd()
-//
-//
-// //- Дано список імен.
-// // console.time()
-// // let n4 = '    Harry       Potter      '
-// // let n5 = '    Ron       Whisley      '
-// // let n6 = '    Hermione       Granger      '
-// // // Написати функцію, яка приймає будь яке не валідне імя, та нормалізує його в наступнйи вигляд
-// // // let n1 = 'Harry Potter'
-// // // let n2 = 'Ron Whisley'
-// // // let n3 = 'Hermione Granger'
-// // //
-// // function normString(text) {
-// // 	text = text.trim()
-// // 	for (let i = 0; i < text.length; i++) {
-// // 		text = text.replaceAll('  ', ' ')
-// // 	}
-// // 	return text;
-// // }
-// // console.log(normString(n4));
-// // console.log(normString(n5));
-// // console.log(normString(n6));
-// // console.timeEnd()
-bool = true;
-while (bool) {
-	let a = Math.floor(Math.random() * 10);
-	let b = Math.floor(Math.random() * 10);
 
-	let s = +prompt(`${a} + ${b} =`);
-	if (s === a + b) {
-		alert('Аня правильно');
+let summ = 100;
+let arr = [];
+let i;
+
+
+function rec(arr) {
+	let spor = Math.floor(Math.random() * summ);
+	if (spor < 79 && (!arr.length || arrs(spor, arr))) {
+		summ -= spor;
+		arr.push(spor);
 	} else {
-		alert('Неправильно');
+		return arr, summ;
+		;
+	}
+
+
+	return arr, summ;
+}
+
+function arrs(spor, arr) {
+	for (let i = 0; i < arr.length; i++) {
+		if (spor === arr[i])
+			return false;
+		return true;
+
 	}
 }
+
+function trying(arr) {
+
+
+	const acc = arr.reduce((acc, value) => {
+		acc += value;
+		return acc;
+
+	}, 0);
+
+	if (acc === 100 && summs(arr) && arr.length === 7) {
+		return false;
+	} else {
+		return true;
+	}
+
+}
+
+
+function summs(arr) {
+	let number = Math.pow(arr.length, 2) - arr.length;
+	for (let j = 0; j < arr.length; j++) {
+		for (let k = 0; k < arr.length; k++) {
+			if (k !== j && arr[k] !== arr[j]) {
+				number--;
+			}
+
+		}
+
+	}
+	if (number) {
+		return false;
+	}
+	return true;
+}
+
+let x = 0;
+while (arr.length < 6) {
+	for (i = 0; i < 7; i++) {
+		if (i === 6) {
+			arr.push(summ);
+		} else {
+			rec(arr);
+		}
+	}
+	arr = arr.sort((a, b) =>
+		b - a);
+	if ((trying(arr))||(arr[0]+arr[1]+arr[2]<=50)) {
+		arr = [];
+		summ = 100;
+	}
+	x++;
+	if (x > 20000) {
+		console.log('Пройшло 20000 спроб');
+		break;
+	}
+
+
+}
+console.log(summ);
+console.log(arr);
